@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Contact Me | ABDULKAREEM MAZEN JAMEEL ISMAIL </title>
+  <title>Contact Me | ABDULKAREEM MAZEN JAMEEL ISMAIL</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -19,7 +19,35 @@
   <main>
     <section class="card form-card">
       <h2>Contact Me</h2>
-      <p class="subtitle">Or email me directly at: <a href="amismail24@cit.just.edu.jo">amismail24@cit.just.edu.jo</a></p>
+      <p class="subtitle">You can email me directly at:
+        <a href="mailto:amismail24@cit.just.edu.jo">amismail24@cit.just.edu.jo</a>
+      </p>
+      <p class="subtitle">Or leave your details below and I will contact you.</p>
+
+      <form id="contactForm" novalidate>
+        <label for="fullName">Full Name</label>
+        <input type="text" id="fullName" name="fullName" placeholder="Enter your full name">
+
+        <label for="email">Your Email Address</label>
+        <input type="email" id="email" name="email" placeholder="example@email.com">
+
+        <label for="country">Country</label>
+        <select id="country" name="country">
+          <option value="">-- Select your country --</option>
+          <option>Jordan</option>
+          <option>Saudi Arabia</option>
+          <option>United Arab Emirates</option>
+          <option>Palestine</option>
+          <option>Egypt</option>
+          <option>Iraq</option>
+          <option>Lebanon</option>
+          <option>Syria</option>
+          <option>Kuwait</option>
+          <option>Qatar</option>
+          <option>United States</option>
+          <option>United Kingdom</option>
+          <option>Other</option>
+        </select>
 
         <label for="comments">Comments</label>
         <textarea id="comments" name="comments" rows="5" placeholder="Write your comments here..."></textarea>
@@ -32,7 +60,7 @@
   </main>
 
   <footer>
-    <p>&copy; ABDULKAREEM MAZEN JAMEEL ISMAIL | Jordan University of Science and Technology</p>
+    <p>&copy;ABDULKAREEM MAZEN JAMEEL ISMAIL </p>
   </footer>
 
   <script src="script.js"></script>
